@@ -1,1 +1,59 @@
-# 
+  HomePro — Home Services Web Application 
+  
+ HomePro is a simple web-based platform to connect customers with local home service providers (cleaning, plumbing, electrical, painting, shifting, etc.). It supports customer & provider roles, admin approval for providers, appointment booking, and basic admin management.
+ 
+ Features
+
+- Customer registration & login.
+- Service provider registration with profile and SIP (Service Initiation Payment) receipt upload (requires admin approval).
+- Browse services and service providers grouped by category.
+- Book appointments (prevents double-booking for same provider/date).
+- Provider dashboard to accept/reject appointments.
+- Admin panel to manage users, providers, appointments and reports.
+- Session-based authentication, password hashing and basic input validation.
+
+   Tech Stack
+
+- Frontend: HTML, CSS, JavaScript, Bootstrap
+- Backend: PHP
+- Database: MySQL (phpMyAdmin)
+- Local dev: XAMPP / Apache
+
+  #  Installation (local)
+  1. Install XAMPP (or a similar Apache + PHP + MySQL stack).
+  2. Clone the repo:
+   `bash
+   git clone <your-repo-url>
+ 3. Put project folder inside htdocs (for XAMPP) or your webserver root.
+ 4. Create a MySQL database, e.g. clean_homepro.
+ 5. Import the provided SQL (if available) or create tables:
+      users
+      service_provider
+      appointments
+      admin
+ 6. Update DB connection in config.php (host, username, password, database, port):
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+      $database = "clean_homepro";
+      $conn = mysqli_connect($servername, $username, $password, $database);
+ 7. Make sure uploads/ folder exists and is writable by the web server (set correct permissions).
+ 8. Open in browser: http://localhost/homepro/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
