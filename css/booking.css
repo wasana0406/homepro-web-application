@@ -1,0 +1,334 @@
+ /* Bolder Color Palette */
+        :root {
+            --primary-color: #6C5CE7; /* Deep Purple */
+            --secondary-color: #FF6B6B; /* Vibrant Red/Coral */
+            --accent-color: #00B894; /* Emerald Green */
+            --text-dark: #2C3E50; /* Dark Blue-Gray */
+            --text-light: #ECF0F1; /* Light Gray */
+            --bg-light: #F4F6F9; /* Off-white background */
+            --bg-white: #FFFFFF;
+            --border-color: #DDE0E3; /* Lighter border */
+            --input-bg: #FAFBFC; /* Very light input background */
+
+            --success-bg: #D4EDDA;
+            --success-text: #155724;
+            --error-bg: #F8D7DA;
+            --error-text: #721C24;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); /* Gradient background */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            min-height: 100vh; /* Ensure full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 95%; /* Make it slightly more responsive */
+            margin: 40px auto; /* Reduced margin for smaller screens, adjusted to 40px for larger */
+            background: var(--bg-white);
+            padding: 10px 50px; /* Increased padding */
+            border-radius: 10px; /* More rounded corners */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+            display: flex;
+            gap: 60px; /* Increased gap */
+            flex-wrap: wrap;
+            align-items: stretch; /* Stretch items to fill height */
+        }
+
+        .left-panel, .right-panel {
+            flex: 1;
+            min-width: 350px; /* Increased min-width */
+            padding: 20px; /* Added internal padding */
+            border-radius: 15px; /* Rounded corners for panels */
+        }
+
+        /* Left Panel - Service Provider Details */
+        .service-header {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center items */
+            text-align: center;
+            gap: 25px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border-color); /* Thicker border */
+        }
+
+        .service-header img {
+            width: 180px; /* Larger image */
+            height: 180px; /* Larger image */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid var(--accent-color); /* Bolder accent border */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger image shadow */
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .service-header img:hover {
+            transform: scale(1.08) rotate(2deg); /* More dynamic hover */
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-info h2 {
+            font-size: 2.8em; /* Larger heading */
+            margin: 15px 0 10px 0;
+            color: var(--primary-color);
+            font-weight: 800; /* Extra bold */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .category-tag {
+            background: linear-gradient(45deg, var(--secondary-color), #FF4D4D); /* Gradient for category */
+            color: var(--text-light);
+            padding: 8px 20px; /* Increased padding */
+            border-radius: 25px; /* More rounded */
+            display: inline-block;
+            font-size: 1em; /* Slightly larger */
+            font-weight: 700;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+            letter-spacing: 0.5px;
+        }
+
+        .service-info p {
+            margin: 8px 0; /* More spacing */
+            font-size: 1.1em; /* Slightly larger text */
+            color: #555;
+        }
+        .service-info strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        .service-info .price {
+            font-size: 1.3em;
+            color: var(--accent-color); /* Price stands out */
+            font-weight: 700;
+        }
+
+
+        .description-section {
+            margin-top: 30px;
+            padding: 0 20px; /* Add some padding to description text */
+        }
+        .description-section h3 {
+            font-size: 2em; /* Larger heading */
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 700;
+            border-bottom: 3px solid var(--primary-color); /* Thicker border */
+            padding-bottom: 10px;
+            display: inline-block;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .description-section p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1.05em;
+            color: #444;
+            background-color: var(--bg-light); /* Light background for description */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.05); /* subtle inner shadow */
+        }
+
+        /* Right Panel - Booking Form */
+        .right-panel {
+            background: var(--bg-white);
+            padding: 20px; /* More padding */
+            border-radius: 18px; /* Consistent rounded corners */
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+            transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother transition */
+            border: 2px solid var(--border-color); /* Thicker border */
+        }
+
+        .right-panel:hover {
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+            transform: translateY(-8px) scale(1.01); /* More pronounced lift and slight scale */
+            border-color: var(--primary-color);
+        }
+
+        .appointment-form h2 {
+            font-size: 2.1em; /* Even larger heading */
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-align: center;
+            font-weight: 800; /* Extra bold */
+            letter-spacing: 1px;
+        }
+
+        .appointment-form label {
+            display: block;
+            margin-bottom: 10px; /* More spacing */
+            font-weight: 600; /* Bolder label */
+            color: var(--text-dark);
+            font-size: 1em; /* Slightly larger label */
+        }
+
+        .appointment-form input {
+            width: calc(100% - 24px); /* Adjusted for padding and border */
+            padding: 14px; /* More padding */
+            margin-bottom: 25px; /* More spacing */
+            border-radius: 10px; /* More rounded */
+            border: 2px solid var(--border-color); /* Thicker border */
+            font-size: 1.05em;
+            background-color: var(--input-bg); /* Dedicated input background */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .appointment-form input:focus {
+            border-color: var(--secondary-color); /* Focus color */
+            box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.3); /* Stronger shadow on focus */
+            background-color: var(--bg-white); /* White background on focus */
+            outline: none;
+        }
+
+        .appointment-form button {
+            width: 100%;
+            padding: 18px; /* Even more padding */
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); /* Gradient button */
+            color: var(--text-light);
+            border: none;
+            border-radius: 12px; /* Very rounded */
+            font-size: 1.25em; /* Larger text */
+            font-weight: 700; /* Bolder text */
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(108, 92, 231, 0.4); /* Stronger shadow */
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .appointment-form button:hover {
+            background: linear-gradient(45deg, var(--secondary-color), var(--primary-color)); /* Invert gradient on hover */
+            transform: translateY(-4px) scale(1.01); /* More pronounced lift and scale */
+            box-shadow: 0 12px 25px rgba(255, 107, 107, 0.5); /* Stronger hover shadow */
+        }
+        .appointment-form button:active {
+            transform: translateY(0);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        /* Message styling */
+        .booking-message {
+            padding: 18px; /* More padding */
+            margin-bottom: 30px; /* More spacing */
+            border-radius: 10px; /* More rounded */
+            font-weight: 700; /* Bolder message text */
+            text-align: center;
+            font-size: 1em;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Clearer shadow */
+        }
+        .booking-message.success {
+            background-color: var(--success-bg);
+            color: var(--success-text);
+            border: 1px solid #c3e6cb;
+        }
+        .booking-message.error {
+            background-color: var(--error-bg);
+            color: var(--error-text);
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Main Header (assuming 'header.php' contains a similar style) */
+        /* If header.php is not styled, you might want to add similar vibrant styles there */
+        .main-header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 25px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 992px) {
+            .container {
+                flex-direction: column;
+                padding: 30px;
+                margin: 25px auto;
+                gap: 40px;
+            }
+            .left-panel, .right-panel {
+                min-width: unset; /* Remove min-width to allow full width */
+                width: 100%;
+                padding: 25px; /* Adjust internal padding */
+            }
+            .service-header {
+                padding-bottom: 20px;
+            }
+            .service-header img {
+                width: 150px;
+                height: 150px;
+                border-width: 5px;
+            }
+            .service-info h2 {
+                font-size: 2.2em;
+            }
+            .description-section h3 {
+                font-size: 1.8em;
+            }
+            .appointment-form h3 {
+                font-size: 2em;
+            }
+            .appointment-form input,
+            .appointment-form button {
+                padding: 12px;
+                font-size: 1.1em;
+            }
+            .booking-message {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            body {
+                padding: 15px; /* Add some padding to body on small screens */
+            }
+            .container {
+                padding:20px;
+                margin: 15px auto;
+                border-radius: 15px;
+            }
+            .service-header img {
+                width: 120px;
+                height: 120px;
+                border-width: 4px;
+            }
+            .service-info h2 {
+                font-size: 1.8em;
+            }
+            .category-tag {
+                font-size: 0.9em;
+                padding: 6px 15px;
+            }
+            .service-info p, .description-section p {
+                font-size: 0.95em;
+            }
+            .description-section h3 {
+                font-size: 1.4em;
+            }
+            .appointment-form h3 {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            .appointment-form input,
+            .appointment-form button {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .booking-message {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+        }

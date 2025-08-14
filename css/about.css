@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right,rgb(56, 215, 236), #e9f0f6);
+    color:rgb(124, 63, 109);
+}
+
+/* Section Titles */
+h1, h2, h3 {
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:rgb(80, 109, 236);
+}
+
+.subtext {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    color: #5c636a;
+}
+
+.about-section {
+    background: #ffffff;
+    border-left: 8px solid #0d6efd;
+    border-radius: 15px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+    padding: 40px;
+    margin-bottom: 80px;
+}
+
+.about-icon {
+    font-size: 2rem;
+    color:rgb(179, 117, 238);
+    margin-right: 12px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 28px;
+    color: #374151;
+}
+
+.about-text li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #10b981;
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+.team-section {
+    background: #fff;
+    padding: 60px 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+}
+
+.team-card {
+    background: linear-gradient(145deg,rgb(252, 250, 248), #e2e8f0);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    border-top: 4px solid #f59e0b;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
+}
+
+.team-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #dee2e6;
+}
+
+.team-card h5 {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.team-card p {
+    color: #6b7280;
+}
