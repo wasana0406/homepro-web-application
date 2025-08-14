@@ -12,7 +12,7 @@
 - Admin panel to manage users, providers, appointments and reports.
 - Session-based authentication, password hashing and basic input validation.
 
-   Tech Stack
+Tech Stack
 
 - Frontend: HTML, CSS, JavaScript, Bootstrap
 - Backend: PHP
@@ -20,10 +20,10 @@
 - Local dev: XAMPP / Apache
 
   #  Installation (local)
-  1. Install XAMPP (or a similar Apache + PHP + MySQL stack).
-  2. Clone the repo:
+1. Install XAMPP (or a similar Apache + PHP + MySQL stack).
+2. Clone the repo:
    `bash
-   git clone <your-repo-url>
+   git clone <https://github.com/wasana0406/homepro-web-application.git>
  3. Put project folder inside htdocs (for XAMPP) or your webserver root.
  4. Create a MySQL database, e.g. clean_homepro.
  5. Import the provided SQL (if available) or create tables:
