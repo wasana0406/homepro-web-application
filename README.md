@@ -37,6 +37,7 @@ Tech Stack
       $password = "";
       $database = "clean_homepro";
       $conn = mysqli_connect($servername, $username, $password, $database);
+    
     <img width="653" height="428" alt="Image" src="https://github.com/user-attachments/assets/2dd4a426-39b6-446a-840a-78f6d967742f" />
 
  8. Make sure uploads/ folder exists and is writable by the web server (set correct permissions).
