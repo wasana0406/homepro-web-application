@@ -55,7 +55,8 @@ Booking page
 Login page
  <img width="1266" height="629" alt="Image" src="https://github.com/user-attachments/assets/b1805567-d39d-4c70-8087-025dc2f6b31d" />
 
-
+Admin dashboard
+<img width="1365" height="626" alt="Image" src="https://github.com/user-attachments/assets/f8c7d253-cf34-4dac-afe9-8bb3cbc7d724" />
 
 
 
