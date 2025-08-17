@@ -44,9 +44,10 @@ Tech Stack
  9. Open in browser: http://localhost/homepro/
 
 Home page
-
 <img width="1345" height="630" alt="Image" src="https://github.com/user-attachments/assets/3325be92-1131-415f-8e7d-e7234c939e2a" />
 
+Services page
+<img width="1349" height="633" alt="Image" src="https://github.com/user-attachments/assets/d91c52e0-f279-4167-8286-89223722c41f" />
 
 
 
