@@ -49,6 +49,8 @@ Home page
 Services page
 <img width="1349" height="633" alt="Image" src="https://github.com/user-attachments/assets/d91c52e0-f279-4167-8286-89223722c41f" />
 
+Booking page
+<img width="1350" height="630" alt="Image" src="https://github.com/user-attachments/assets/63288bf6-5d8e-4f10-9745-c6db3f18272d" />
 
 
 
