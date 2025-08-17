@@ -43,7 +43,9 @@ Tech Stack
  8. Make sure uploads/ folder exists and is writable by the web server (set correct permissions).
  9. Open in browser: http://localhost/homepro/
 
+Home page
 
+<img width="1345" height="630" alt="Image" src="https://github.com/user-attachments/assets/3325be92-1131-415f-8e7d-e7234c939e2a" />
 
 
 
