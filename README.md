@@ -52,6 +52,8 @@ Services page
 Booking page
 <img width="1350" height="630" alt="Image" src="https://github.com/user-attachments/assets/63288bf6-5d8e-4f10-9745-c6db3f18272d" />
 
+Login page
+<img width="1266" height="629" alt="Image" src="https://github.com/user-attachments/assets/b1805567-d39d-4c70-8087-025dc2f6b31d" />
 
 
 
